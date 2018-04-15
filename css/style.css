@@ -1,1 +1,151 @@
 /* stylesheet*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Merriweather', serif;
+}
+
+header,
+main {
+  margin: auto;
+  padding: 10px 20px;
+}
+
+header {
+  background: #5c5c5c;
+  text-align: center;
+  color: #fff;
+  font-size: 0.75em;
+}
+.signup {
+  padding: 0 10px 20px 10px;
+  text-align: center;
+  border-bottom: 5px solid #5c5c5c;
+  margin-bottom: 5px;
+}
+form {
+  border-top: 2px solid #5c5c5c;
+  padding: 10px 0;
+}
+fieldset {
+  border: none;
+  padding: 0 0;
+}
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+label{
+  font-size: 1.25em;
+  color: #5c5c5c;
+  display: block;
+  margin-bottom: 8px;
+}
+input::placeholder {
+  opacity: .6;
+  font-style: italic;
+  text-align: right;
+  padding-right: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="checkbox"],
+input[type="radio"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  margin-bottom: 10px;
+  border-radius: .5em;
+}
+select {
+  padding: 6px;
+  height: 32px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+  border-radius: 0;
+  width: auto;
+  display: inline;
+}
+input:required:focus {
+  border: 1px solid #009999;
+  outline: none;
+  background-color: #c9f3fa;
+}
+input:focus {
+  border: 1px solid #5c5c5c;
+  outline: none;
+}
+textarea:focus {
+  border: 1px solid #5c5c5c;
+  outline: none;
+}
+
+label.name {
+  font-size: 1em;
+  font-weight: 300;
+  display: inline;
+  padding-left: 5px;
+}
+
+.divider {
+  border-top: 2px solid #5c5c5c;
+  margin: 10px 0 20px 0;
+
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #009999;
+  font-size: 22px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px 0;
+}
+.footer {
+  text-align: center;
+  font-style: italic;
+  font-size: 1em;
+  color: #a2a2a2;
+}
+
+
+@media screen and (min-width: 768px) {
+
+  main {
+    max-width: 700px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .field {
+    display: flex;
+    flex: 1;
+  }
+  .labels{
+    padding: 15px 10px 0 0;
+    min-width: 150px;
+  }
+}
